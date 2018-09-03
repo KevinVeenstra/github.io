@@ -47,7 +47,9 @@ li a {
 
 li a:hover:not(.active) {
     background-color: #111;
+    position: relative;
     text-transform: 20px;
+    top: -3px;
 }
 
 .active {

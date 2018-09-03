@@ -48,6 +48,7 @@ li a {
 li a:hover:not(.active) {
     background-color: #111;
     position: relative;
+    transition-duration: 1s;
     text-transform: 20px;
     top: -3px;
 }
@@ -61,11 +62,11 @@ li a:hover:not(.active) {
 p {
     color: white;
     text-align: center;
-    border: 3px inset darkmagenta;
+    border: 1px solid darkmagenta;
     background: rgb(0, 0, 0);
     border-radius: 15px;
     padding: 10px 20px;
-    border-width: 15px;
+    border-width: 3px;
     margin: 2% 50% 0% 5%;
 }
 

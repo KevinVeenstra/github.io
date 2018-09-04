@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+html{
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+
+}
+
 .banner {
     width: 100%;
 }
@@ -15,7 +21,6 @@
     background-position: center;
     float: right;
 }
-
 
 nav {
     width: 100%;
@@ -56,10 +61,10 @@ li a:hover:not(.active) {
 .active {
     background-color: rgb(46, 0, 73);
     position: relative;
-    top: 3px
+    top: 3px;
 }   
 
-p {
+.inhoud {
     color: white;
     text-align: center;
     border: 1px solid darkmagenta;
@@ -74,12 +79,6 @@ h1 {
     margin: 0.5rem;
     color: white;
     text-shadow: 2px 2px;
-}
-
-html{
-    background-image: url(Images/background.jpg);
-    background-size: cover;
-
 }
 
 #ik {
@@ -121,4 +120,10 @@ table {
     text-align: left;
     width: 33.3333%;
   }
-  
+ 
+  flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }

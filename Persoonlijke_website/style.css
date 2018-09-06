@@ -1,3 +1,4 @@
+/* Basis opmaak website */
 * {
     margin: 0;
     padding: 0;
@@ -22,108 +23,222 @@ html{
     float: right;
 }
 
+/* Navigatie */
 nav {
     width: 100%;
     padding: 0%
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-image: linear-gradient(rgb(16, 0, 163), rgb(0, 0, 0));
 }
 
-li {
+nav li {
     float: left;
     border-right:2px solid rgba(0, 0, 0, 0.795);
-    width: 10% auto;
+    width: 8%;
 }
 
-li a {
-    font-size: 1.5rem;
+nav li a {
+    font-size: 1.25rem;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 8px;
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
+nav li a:hover:not(.active) {
+    background-color: rgb(62, 6, 100);
     position: relative;
     transition-duration: 1s;
     text-transform: 20px;
     top: -3px;
 }
 
-.active {
-    background-color: rgb(46, 0, 73);
-    position: relative;
-    top: 3px;
+nav .active {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(16, 0, 163)); 
 }   
 
-.inhoud {
-    color: white;
-    text-align: center;
-    border: 1px solid darkmagenta;
-    background: rgb(0, 0, 0);
-    border-radius: 15px;
-    padding: 10px 20px;
-    border-width: 3px;
-    margin: 2% 50% 0% 5%;
+/* vakken en ec tables */
+.sem1 {
+    width: 85%;
+    padding-top: 2%;
+    padding-left: 2%;
 }
 
-h1 {
-    margin: 0.5rem;
-    color: white;
-    text-shadow: 2px 2px;
+.sem2 {
+    width: 85%;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-bottom: 2%;
 }
 
-#ik {
-    background-repeat: no-repeat;
-    background-size: 50%;
-    padding: 35px 35px 3px 35px;
-    background-origin: content-box;
-}
-
-table {
-    height: 40%;
-    left: 10%;
-    margin: 20px auto;
-    overflow-y: scroll;
-    position: static;
-    width: 80%;
-  }
-  
-  thead th {
-    background: #88CCF1;
+thead  {
+    font-size: 1.25rem;
+    background: rgb(25, 124, 177);
     color: #FFF;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-  
-  tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 5px;
-  }
-  
-  th, td {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    padding: 20px;
+}
+
+tbody  {
+    text-align: center;
+    background: rgb(133, 186, 214);
+    color: #FFF;
+    font-family: 'Lato', sans-serif;    
+}
+
+.vak {
     text-align: left;
-    width: 33.3333%;
-  }
+}
+
+/* Persoonlijke info / profile pagina */ 
+.column-layout {
+    color: white;
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.65;
+   
+    max-width: 95%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-column {
+    background-color: rgba(127, 255, 212, 0.300);
+    border: 2px solid white;
+    flex: 3;
+    order: 2;
+    padding: 15px;
+
+}
+
+.sidebar-one {
+    background-color: rgba(0, 255, 255, 0.300);
+    margin-right: 5px;
+    border: 2px solid white;
+    flex: 0.6;
+    order: 1; 
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.ik {
+    padding: 15px 15px 5px 15px;
+}
+
+.call-outs-container {
+    color: white;
+    
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.65;
+    max-width: 95%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call-out {
+    border: 2px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 49%;
+}
+
+.call-out:nth-child(1) {background-color: rgba(0, 255, 255, 0.300);}
+.call-out:nth-child(2) {background-color: rgba(127, 255, 212, 0.300);}
+.call-out:nth-child(3) {background-color: rgba(0, 0, 255, 0.300);}
+
+/* Index Pagina */
+.index-page {
+    color: white;
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.65;
+   
+    max-width: 95%;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.waarom {
+    background-color: rgba(89, 100, 100, 0.400);
+    border: 2px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 49%;
+}
+
+.extra-info {
+    color: white;
+    background-color: rgba(89, 100, 100, 0.400);
+
+    font-family: 'Lato', sans-serif; 
+    line-height: 1.65;
+    max-width: 95%;
+    margin: 40px auto 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-een {    
+    border: 2px solid rgba(255, 255, 255, 0.932);
+    flex: 3;
+    order: 2;
+    padding: 15px;
+}
+
+.info-twee {
+    border: 2px solid rgba(255, 255, 255, 0.932);
+    margin-right: 5px;
+    flex: 1;
+    order: 1; 
+    padding: 15px;
+}
+
+.Usborne {
+    text-align: bottom;
+}
+
+.heading {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(16, 0, 163), rgb(0, 0, 0));
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+}
+
+/* Info links */
+.links {
+    color: white;
+    margin: 2%;
+    max-width: 65%;
+    height: 50px;
+}
+
+.links ul{
+   
+}
+
+.links ul li {
+    background-color: rgb(153, 149, 145);
  
-  flex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-  }
+    border: 5px solid white;
+    margin: 5px;
+    padding: 0 0 0 15px;
+    border-radius: 15px;
+}
+
+.links li a:hover {
+    background-color: rgba(62, 6, 100, 0.288);
+    position: relative;
+    transition-duration: 1s;
+    text-transform: 20px;
+}

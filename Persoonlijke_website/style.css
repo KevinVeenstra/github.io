@@ -34,7 +34,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(rgb(16, 0, 163), rgb(0, 0, 0));
+    background-image: linear-gradient(gray, rgb(0, 0, 0));
 }
 
 nav li {
@@ -61,7 +61,7 @@ nav li a:hover:not(.active) {
 }
 
 nav .active {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(16, 0, 163)); 
+    background-image: linear-gradient(rgb(0, 0, 0), gray); 
 }   
 
 /* vakken en ec tables */
@@ -80,23 +80,46 @@ nav .active {
 
 thead  {
     font-size: 1.25rem;
-    background: rgb(25, 124, 177);
+    background: gray;
     color: #FFF;
     font-family: 'Lato', sans-serif;
 }
 
 tbody  {
     text-align: center;
-    background: rgb(133, 186, 214);
+    background: silver;
     color: #FFF;
     font-family: 'Lato', sans-serif;    
 }
 
+td {
+    width: 8%;
+}
+
 .vak {
+    color: blue;
     text-align: left;
+    width: 35%;
+}
+
+.niet_gehaald {
+    color: red;
+}
+
+.gehaald {
+    color: green
 }
 
 /* Persoonlijke info / profile pagina */ 
+
+#hover2{
+    content:url(./Images/KevinWizard2.jpg)
+}
+
+#hover2:hover{
+    content:url(./Images/KevinWizard.jpg)
+}
+
 .column-layout {
     color: white;
     font-family: 'Lato', sans-serif; 
@@ -109,8 +132,8 @@ tbody  {
 }
 
 .main-column {
-    background-color: rgba(127, 255, 212, 0.300);
-    border: 2px solid white;
+    background-color: rgba(128, 128, 128, 0.400);
+    border: 2px solid gray;
     flex: 3;
     order: 2;
     padding: 15px;
@@ -118,9 +141,9 @@ tbody  {
 }
 
 .sidebar-one {
-    background-color: rgba(0, 255, 255, 0.300);
+    background-color: rgba(128, 128, 128, 0.400);
     margin-right: 5px;
-    border: 2px solid white;
+    border: 2px solid gray;
     flex: 0.6;
     order: 1; 
     padding: 15px;
@@ -128,12 +151,20 @@ tbody  {
 }
 
 .ik {
-    padding: 15px 15px 5px 15px;
+    padding: 15px;
+}
+
+.biografie {
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    width: 35%;
+    text-align: center;
 }
 
 .call-outs-container {
     color: white;
-    
     font-family: 'Lato', sans-serif; 
     line-height: 1.65;
     max-width: 95%;
@@ -143,16 +174,15 @@ tbody  {
 }
 
 .call-out {
-    border: 2px solid white;
+    border: 2px solid gray;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
     flex-basis: 49%;
 }
 
-.call-out:nth-child(1) {background-color: rgba(0, 255, 255, 0.300);}
-.call-out:nth-child(2) {background-color: rgba(127, 255, 212, 0.300);}
-.call-out:nth-child(3) {background-color: rgba(0, 0, 255, 0.300);}
+.call-out:nth-child(1) {background-color: rgba(128, 128, 128, 0.400);}
+.call-out:nth-child(2) {background-color: rgba(128, 128, 128, 0.400);}
 
 /* Index Pagina */
 .index-page {
@@ -203,14 +233,19 @@ tbody  {
 }
 
 .Usborne {
-    text-align: bottom;
+    border: 2px solid white;
+    border-radius: 15px;    
+    background-color: gray;
+    padding: 5px;
+    width: 45%;
 }
 
 .heading {
     border: 2px solid white;
     border-radius: 15px;
-    background-image: linear-gradient(rgb(16, 0, 163), rgb(0, 0, 0));
+    background-image: linear-gradient(gray, rgb(0, 0, 0)); 
     padding: 5px;
+    margin-bottom: 15px;
     width: 25%;
     text-align: center;
 }
@@ -221,19 +256,26 @@ tbody  {
     margin: 2%;
     max-width: 65%;
     height: 50px;
+    padding: 2%;
 }
 
 .links ul{
-   
+    list-style-type: none;
+    padding: 15px;
+    overflow: hidden;
+    background-color: rgba(128, 128, 128, 0.800);
+    border: 2px solid gray;
+    margin-bottom: 2%;
 }
 
 .links ul li {
-    background-color: rgb(153, 149, 145);
- 
-    border: 5px solid white;
-    margin: 5px;
-    padding: 0 0 0 15px;
-    border-radius: 15px;
+
+    font-size: 1.25rem;
+    display: block;
+    color: white;
+    margin: 15px;
+    padding: 8px 8px;
+    text-decoration: none;
 }
 
 .links li a:hover {
@@ -241,4 +283,8 @@ tbody  {
     position: relative;
     transition-duration: 1s;
     text-transform: 20px;
+    top: -3px;
 }
+
+
+

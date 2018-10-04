@@ -82,7 +82,7 @@ function findAverage(x, y) {
 
 console.log(findAverage(5, 9));
 */
-/*
+
 function fibonacci(num) {
     var fibonacci = []; // Initialize array!
 
@@ -111,16 +111,26 @@ function countdown(seconds) {
 
 console.log(countdown(15));
 
-*/
+//-------------------------------------------
 
-setState = 10;
+/*
+ * Programming Quiz: Inline Functions (5-6)
+ */
 
-function countdown() {
-	setState--;
-	document.getElementById("seconds").setState = timeleft;
-	if (timeleft > 0) {
-		setTimeout(countdown, 1000);
-	}
-};
+// don't change this code
+function emotions(myString, myFunc) {
+    console.log("I am " + myString + ", " + myFunc(2));
+}
 
-setTimeout(countdown, 1000);
+// your code goes here
+// call the emotions function here and pass in an
+// inline function expression
+emotions("happy", function laugh(num){
+    var ha = ""; 
+    for (x = 0; x < num; x++){ 
+        ha += "ha";
+    }  
+    return ha + "!";
+});
+
+

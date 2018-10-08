@@ -44,6 +44,6 @@ const teachers = [
     }
 ]
 
-teachers.forEach(function (teachers) {
+teachers.forEach(function(teachers) {
     console.log(`I have a ${teachers.profession} named ${teachers.name} and he like to work on a ${teachers.brand} computer. And earns $${teachers.salaryPerHour()} per hour.`)
 });

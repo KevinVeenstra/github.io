@@ -5,17 +5,18 @@
 }
 
 html{
-    background-image: url(Images/background.jpg);
+    background-image: url(Images/background.png);
     background-size: cover;
 
 }
 
 .banner {
     width: 100%;
-}
+    margin-bottom: -4px;
+ }
 
 .background {
-    background-image: url(./Images/background.jpg);
+    background-image: url(./Images/background.png);
     height: 100%;
     width: 100%;
     background-size: cover;
